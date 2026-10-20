@@ -7,11 +7,11 @@ app.use(express.static(__dirname));
 
 // Наші дані для 4 варіанту (Каталог настільних ігор)
 const boardGames = [
-    { id: 1, title: 'Каркасон', minPlayers: 2, maxPlayers: 5, genre: 'Стратегія', img: 'assets/img/carcassonne.jpg', owned: false, description: 'Класична гра про розбудову середньовічної Франції.' },
-    { id: 2, title: 'Манчкін', minPlayers: 3, maxPlayers: 6, genre: 'Карткова', img: 'assets/img/munchkin.jpg', owned: false, description: 'Пародія на рольові ігри.' },
-    { id: 3, title: 'Діксіт', minPlayers: 3, maxPlayers: 8, genre: 'Асоціації', img: 'assets/img/dixit.jpg', owned: false, description: 'Гра на асоціації з неймовірними ілюстраціями.' },
-    { id: 4, title: 'Козаки', minPlayers: 2, maxPlayers: 4, genre: 'Стратегія', img: 'assets/img/Cossacs.jpg', owned: false, description: 'Історична гра про українських козаків.' },
-    { id: 5, title: 'Вуаля', minPlayers: 2, maxPlayers: 6, genre: 'Карткова', img: 'assets/img/Wualia.jpg', owned: false, description: 'Швидка гра на реакцію.' }
+    { id: 1, title: 'Каркасон', minPlayers: 2, maxPlayers: 5, duration: 45, genre: 'Стратегія', img: 'assets/img/carcassonne.jpg', owned: false, description: 'Класична гра про розбудову середньовічної Франції.' },
+    { id: 2, title: 'Манчкін', minPlayers: 3, maxPlayers: 6, duration: 60, genre: 'Карткова', img: 'assets/img/munchkin.jpg', owned: false, description: 'Пародія на рольові ігри.' },
+    { id: 3, title: 'Діксіт', minPlayers: 3, maxPlayers: 8, duration: 30, genre: 'Асоціації', img: 'assets/img/dixit.jpg', owned: false, description: 'Гра на асоціації з неймовірними ілюстраціями.' },
+    { id: 4, title: 'Козаки', minPlayers: 2, maxPlayers: 4, duration: 90, genre: 'Стратегія', img: 'assets/img/Cossacs.jpg', owned: false, description: 'Історична гра про українських козаків.' },
+    { id: 5, title: 'Вуаля', minPlayers: 2, maxPlayers: 6, duration: 15, genre: 'Карткова', img: 'assets/img/Wualia.jpg', owned: false, description: 'Швидка гра на реакцію.' }
 ];
 
 // Ендпоінт 1: Отримання всього списку ігор
